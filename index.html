@@ -1,0 +1,388 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Intro to Design in Browser</title>
+
+		<meta name="description" content="Intro to design in browser methodology for Girl Develop It">
+		<meta name="author" content="Cecy Correa">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+		<link rel="stylesheet" href="lib/zenburn.css">
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Intro to Design in Browser</h1>
+					<h3 class="inverted">Girl Develop It - Austin</h3>
+					<script>
+						// Delicously hacky. Look away.
+						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+					</script>
+				</section>
+				
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li>Design in browser methodology -- how does it work?</li>
+						<li>What about mockups?</li>
+						<li>What are style tiles?</li>
+						<li>How can I use style tiles?</li>
+						<li>Workshop time!</li>
+					</ul>
+				</section>
+				<section>
+					<h2>What does it mean?</h2>
+					<img src="images/whatdoesitmean.jpeg">
+				</section>
+				<section>
+					<h2>What does it mean?</h2>
+					<p>It means different things to different people:</p>
+					<ul>
+						<li>Prototyping</li>
+						<li>Frontend design</li>
+						<li>Mobile first</li>
+						<li>Skill set</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Design in browser: what does it mean?</h2>
+					<p>Yes to all the things. It encompases a lot of different practices.</p>
+				</section>
+				<section>
+					<h2>Definition</h2>
+					<p>Get your design to the browser as quickly as possible.</p>
+				</section>				
+				<section>
+					<h2>WHY?</h2>
+					<ul>
+						<li>The design will ultimately live online</li>
+						<li>Less troubleshooting later</li>
+						<li>Show clients real interactions</li>
+						<li>Reduces design time</li>
+						<li>Easier to use a mobile first approach</li>
+						<li>Reduce ambiguity!</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Design for multiple devices</h2>
+					<img src="images/devices.jpg">
+				</section>		
+				<section>
+					<h2>Graceful degradation vs. Progressive enhancement</h2>
+					<p>Two ways of looking at design for the web.</p>
+				</section>		
+				<section>
+					<h2>Graceful degradation</h2>
+					<p>Design for the biggest common denominator first, then “gracefully degrade” the experience for lesser devices (or browsers).</p>
+				</section>
+				<section>
+					<p>Leads to very lose definitions of "graceful" and "degradation."</p>
+					<img src="images/updatebrowser.jpg">
+				</section>
+				<section>
+					<img src="images/googlenojs.jpg">
+				</section>
+				<section>
+					<h2>Not cool, man.</h2>
+					<p>We should never tell users how to best view the content.</p>
+				</section>
+				<section>
+					<h2>Progressive enhancement</h2>
+					<p>Start with the lowest “common denominator” then progressively enhance the experience for advanced devices.</p>
+				</section>
+				<section>
+					<h2>Progressive enhancement pros</h2>
+					<ul>
+						<li>Focus is on the <strong>content</strong></li>
+						<li>More forward-thinking</li>
+						<li>Works better for a mobile-first approach</li>
+					</ul>
+				</section>
+				<section>
+					<p>Progressive enhancement & Design in browser. <br />Go together like PB&J.</p>
+					<img src="images/pbj.png">
+					<p>*But they're not mutually exclusive.</p>
+				</section>
+				<section>
+					<h2>Let's get to it!</h2>
+				</section>
+				<section>
+					<h2>Does design in browser work for every project?</h2>
+					<p>Some say it makes all sites look the same.</p>
+					<blockquote>...design in the browser encourages a minimal design aesthetic based on the rendering capabilities of CSS.</blockquote>
+					<p>Source: <a href="http://www.andybudd.com/archives/2012/03/designing_in_the_browser_is_not_the_answ/">Andy Budd, Blogography.</a></p>
+				</section>
+				<section>
+					<h2>It's an ongoing debate</h2>
+					<p>Some folks feel limited, some don't.</p>
+				</section>
+				<section>
+					<h2>It works for:</h2>
+					<ul>
+						<li>Brands already established (mostly)</li>
+						<li>Translating a brand to the web</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Probably not the best for:</h2>
+					<p>Establishing a <strong>full</strong> brand vision.</p>
+				</section>
+				<section>
+					<h2>What about mockups?</h2>
+					<p>More and more designers, shops, agencies, are dumping mockups in favor of a hybrid deliverable</p>
+					<ul>
+						<li>Style tiles</li>
+						<li>Wireframes*</li>
+						<li>Style guide</li>
+					</ul>
+					<p>*Some advocate against showing wireframes to clients, only using wireframes internally, and showing clients a working prototype.</p>
+				</section>
+				<section>
+					<h2>Moving away from pixel perfection</h2>
+					<ul>
+						<li>Websites don’t look the same on all browsers, devices</li>
+						<li>Mockups can give a false sense of “completeness” to the client</li>
+						<li>Mockups don’t communicate actual interactivity
+</li>
+					</ul>
+				</section>
+				<section>
+				<h2>Spend a lot of time hacking / tweaking</h2>
+				<img src="images/typing.gif">
+				</section>
+				<section>
+					<img src="images/freedom.gif">
+					<p>Embrace the freedom that comes with knowing things don't look the same everywhere.</p>
+				</section>
+				<section>
+					<h2>This is how we do it</h2>
+					<img src="images/doit.gif">
+				</section>
+				<section>
+					<h2>Style tiles</h2>
+					<p>Style tiles are an expression of a website through individual elements, presented together. They form a <em>common language</em> for the site.</p>
+				</section>
+				<section>
+					<h2>So, like moodboards?</h2>
+					<p>Not quite. Moodboards represent the thing, but are not the thing.</p>
+					<img src="images/moodboard.png">
+				</section>
+				<section>
+					<h2>Style tiles define</h2>
+					<ul>
+						<li>Logo usage on the site</li>
+						<li>Typography</li>
+						<li>Imagery</li>
+						<li>Buttons</li>
+						<li>Look and feel of other elements (headers, footers, sidebar)</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Examples!</h2>
+					<img src="images/styletile01.png">
+				</section>
+				<section>
+					<h2>Examples!</h2>
+					<img src="images/styletile02.png">
+				</section>
+				<section>
+					<h2>Examples!</h2>
+					<img src="images/styletile03.png">
+				</section>
+				<section>
+					<h2>Problems style tiles solve</h2>
+					<ul>
+						<li>Make it pop</li>
+						<li>It should look like Apple</li>
+						<li>It should be like Facebook, but more like Yahoo</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Style tiles use psychology to arrive at a look and feel</h2>
+					<ul>
+						<li>Identify stakeholders to provide input</li>
+						<li>Ask them to fill out a questionnaire about their brand</li>
+						<li>Identify trends in their answers</li>
+						<li>Create a visual design based on stakeholder feedback</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Why this works</h2>
+					<blockquote>“The style tile process teases out the passion behind a brand, revealing nuggets of descriptive goodness all while connecting the client to the project.”
+</blockquote>
+<p>Source: <a href="http://alistapart.com/article/style-tiles-and-how-they-work">A List Apart</a>.</p>
+				</section>
+				<section>
+					<h2>Why this works</h2>
+					<ul>
+						<li>Makes the client feel a part of the process</li>
+						<li>It gives you more actionable feedback</li>
+						<li>Reduces “bikeshedding” syndrome</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Step 1: Identify stakeholders</h2>
+					<ul>
+						<li>Should be easy whether working on an internal project or with external clients, identify folks that are familiar enough with the brand and the goals of the project.</li>
+						<li>Try to get a good representative mix of brand representatives / advocates.</li>
+						<li>Send an email questionnaire or hold an in-person workshop.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Step 2: The questionnaire</h2>
+					<ul>
+						<li>If your brand was a car, what type of car would it be and why?</li>
+						<li>If your brand was a city, what type of city would it be and why?</li>
+						<li>If you website was a household appliance, it would be ___ because ___.</li>
+					</ul>
+					<p>You can write your own, or you can find some online. Try to keep questions are general or relatable as possible.</p>
+				</section>
+				<section>
+					<h2>Bad questions</h2>
+					<p>If your brand was a font, what type of font would it be?</p>
+					<p>&nbsp;</p>
+					<p><em>Why is this a bad question?</em> This is too specific. Not all people are familiar with fonts. You may get stuck using these fonts in your design.</p>
+				</section>
+				<section>
+					<h2>Bad questions</h2>
+					<p>Stay away from comparing the site to existing sites. You want to arrive at a new visual language for the site.</p>
+					<p>&nbsp;</p>
+					<p>Don’t get your clients stuck on looking at other sites. Otherwise, you’re back at “make it look like Apple.”</p>
+				</section>
+				<section>
+					<h2>Step 3: Analyzing the questionnaire</h2>
+					<p>If your brand was a city, what city would it be and why?</p>
+					<ul>
+						<li>My brand would be like Portland, because it’s artistic and cares about the environment.</li>
+						<li>My brand would be Austin, because it embraces music and creativity and it’s laid back.</li>
+						<li>My brand would be like Berkley, because it’s socially responsible, thoughtful, and bohemian.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Step 4: Create the style!</h2>
+					<p>Based on the feedback to the questionnaire, and the trends you’ve identified, you can now create style tiles to present to the client.
+					</p>
+				</section>
+				<section>
+					<h2>Rules of thumb</h2>
+					<ul>
+						<li>Present 2 or 3 variations. Keep it simple.</li> 
+						<li>Client’s shouldn’t try to pick and choose.</li>
+						<li>Iterate</li>
+					</ul>	
+				</section>
+				<section>
+					<h2>Workshop time!</h2>
+					<p>Creating a style tile for a fictional client</p>
+				</section>	
+				<section>
+					<h2>Our client</h2>
+					<p>Hogwarts School of Witchcraft and Wizardry</p>
+					<img src="images/hogwarts.png">
+				</section>
+				<section>
+					<h2>After the style tiles</h2>
+					<ul>
+						<li>Wireframing</li>
+						<li>Style guide</li>
+						<li>Prototype</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Tools</h2>
+					<ul>
+						<li><a href="http://foundation.zurb.com/">Foundation</a></li>
+						<li><a href="http://jekyllrb.com/">Jekyll</a></li>
+						<li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+						<li><a href="http://html5boilerplate.com/">HTML5 Boilerplate</a></li>
+					</ul>
+
+				</section>
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+		<script src="lib/highlight.js"></script>
+		<script src="lib/classList.js"></script>
+		
+		<script src="js/reveal.js"></script>
+		
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+
+			// Fires when a slide with data-state=customevent is activated
+			Reveal.addEventListener( 'customevent', function() {
+				alert( '"customevent" has fired' );
+			} );
+
+			// Fires each time a new slide is activated
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+			} );
+
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// If true; each slide will be pushed to the browser history
+				history: true,
+
+				// Loops the presentation, defaults to false
+				loop: false,
+
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: true,
+
+				// UI style
+				theme: query.theme || 'default', // default/neon
+
+				// Transition style
+				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+			});
+
+			hljs.initHighlightingOnLoad();
+		</script>
+
+	</body>
+</html>
