@@ -27,4 +27,4 @@ Beyond this class
 
 For questions, feel free to contact cecy@girldevelopit.com or @cecycorrea on Twitter for the fastest response :)
 
-**Slides built with [Reveal.js](http://lab.hakim.se/reveal-js)
+**Slides built with [Reveal.js](http://lab.hakim.se/reveal-js)**
